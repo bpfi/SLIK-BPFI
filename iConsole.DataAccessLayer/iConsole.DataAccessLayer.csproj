@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77BACEAF-9F65-4D1F-A53F-7FA59426461D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iConsole.DataAccessLayer</RootNamespace>
+    <AssemblyName>iConsole.DataAccessLayer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\System.Net.Http\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneralDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Control\A01Controller.cs" />
+    <Compile Include="Services\Control\D01Controller.cs" />
+    <Compile Include="Services\Control\D02Controller.cs" />
+    <Compile Include="Services\Control\F01Controller.cs" />
+    <Compile Include="Services\Control\F02Controller.cs" />
+    <Compile Include="Services\Control\F03Controller.cs" />
+    <Compile Include="Services\Control\F04Controller.cs" />
+    <Compile Include="Services\Control\F05Controller.cs" />
+    <Compile Include="Services\Control\F06Controller.cs" />
+    <Compile Include="Services\Control\K01Controller.cs" />
+    <Compile Include="Services\Control\M01Controller.cs" />
+    <Compile Include="Services\Control\P01Controller .cs" />
+    <Compile Include="Services\Control\S01Controller.cs" />
+    <Compile Include="Services\Entity\A01.cs" />
+    <Compile Include="Services\Entity\BaseEntity.cs" />
+    <Compile Include="Services\Entity\D01.cs" />
+    <Compile Include="Services\Entity\D02.cs" />
+    <Compile Include="Services\Entity\F01.cs" />
+    <Compile Include="Services\Entity\F02.cs" />
+    <Compile Include="Services\Entity\F03.cs" />
+    <Compile Include="Services\Entity\F04.cs" />
+    <Compile Include="Services\Entity\F05.cs" />
+    <Compile Include="Services\Entity\F06.cs" />
+    <Compile Include="Services\Entity\Headers.cs" />
+    <Compile Include="Services\Entity\K01.cs" />
+    <Compile Include="Services\Entity\M01.cs" />
+    <Compile Include="Services\Entity\P01.cs" />
+    <Compile Include="Services\Entity\S01.cs" />
+    <Compile Include="Services\Services.cs" />
+    <Compile Include="Utility\DBWrapper.cs" />
+    <Compile Include="Utility\Shared.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\iConsole.DataAccessLayer.dll" />
+    <Content Include="bin\Debug\iConsole.DataAccessLayer.pdb" />
+    <Content Include="obj\Debug\iConsole.DataAccessLayer.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\iConsole.DataAccessLayer.dll" />
+    <Content Include="obj\Debug\iConsole.DataAccessLayer.pdb" />
+    <Content Include="obj\Debug\Refactor\iConsole.DataAccessLayer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\iConsole.DataAccessLayer.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
