@@ -14,7 +14,7 @@ using System.Data.SqlClient;
 public partial class module_debitur_badanusaha : BasePage
 {
     private static string TABLE_NAME = "DEBITUR_BADAN_USAHA";
-
+    //Testing
     protected void Page_Load(object sender, EventArgs e)
     {
         LoadDataDropdownList();
